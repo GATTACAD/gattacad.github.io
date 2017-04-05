@@ -4,15 +4,15 @@
     var skills = [{
         name: 'HTML(5)',
         img: 'images/icon-html.jpg',
-        intro: '语义性，熟练手写符合w3c标准的HTML页面。'
+        intro: '代码注重语义性，熟练手写符合 w3c 标准的HTML页面。'
     }, {
         name: 'CSS(3)',
         img: 'images/icon-css.jpg',
-        intro: '熟练使用CSS对网页进行（自适应）布局，了解不同浏览器的兼容性。<br /> 这里有一个彩虹样式。'
+        intro: '熟练使用CSS对网页进行（自适应）布局，了解常见浏览器的兼容性。<br />'
     }, {
         name: 'Javascript',
         img: 'images/icon-js.jpg',
-        intro: '你知道这个东西不简单，现在追求能够用优雅的代码实现功能。'
+        intro: '看似简单，实则水很深，目前致力于能够用优雅的代码实现功能。'
     }, {
         name: 'jQuery',
         img: 'images/icon-jquery.jpg',
@@ -20,11 +20,11 @@
     }, {
         name: 'AngularJS',
         img: 'images/icon-angular.jpg',
-        intro: '前端框架，用起来还是比较愉快的，极大减轻了对数据方面的处理，库重水深。'
+        intro: '前端框架，用起来还是比较容易上手的，极大减轻了对数据方面的处理，库重水深。'
     }, {
         name: 'NodeJS',
         img: 'images/icon-nodejs.jpg',
-        intro: '以前拿来增删改查，现在用来自动化。'
+        intro: '能够实现增删改查，是接下来的学习方向，正在努力摸索中。'
     }, {
         name: 'BootStrap',
         img: 'images/icon-bootstrap.jpg',
@@ -32,7 +32,7 @@
     }, {
         name: 'Gulp',
         img: 'images/icon-gulp.png',
-        intro: '前端领域的构建工具（任务管理工具），隐隐有超过Grunt的意思。这项技术对于重复性的劳动可谓是雪中送炭，熟练使用创建基本任务。'
+        intro: '前端领域的构建工具（任务管理工具），熟练使用创建基本任务。'
     }, {
         name: 'Less',
         img: 'images/icon-less.jpg',
@@ -40,15 +40,11 @@
     }, {
         name: 'Phtoshop',
         img: 'images/icon-ps.jpg',
-        intro: '熟练使用Photoshop，曾经做过几个网站的UI设计。'
+        intro: '熟练使用Photoshop，用于网页切图。'
     }, {
         name: 'Git',
         img: 'images/icon-git.jpg',
-        intro: '版本管理工具，不用说太多。'
-    }, {
-        name: 'SVN',
-        img: 'images/icon-svn.jpeg',
-        intro: '版本管理工具，不用说太多。'
+        intro: '版本管理工具，无需多言。'
     }];
 
     app.skill = new Vue({
@@ -60,49 +56,24 @@
     });
 
     var exps = [{
-      company: '海致网络技术（北京）有限公司',
-      from: '2013-10',
-      to: '',
+      // company: '',
+      // from: '',
+      // to: '',
       projects: [{
-        name: 'BDP商业数据平台',
-        intro: '数据分析及可视化软件。<a href="https://me.bdp.cn" target="_blank" class="link">个人版体验</a>',
-        tags: ['AngularJS','NodeJS','Grunt']
-      },{
-        name: '其它各种项目略过',
-        intro: '......',
-        tags: ['jQuery','Smarty']
-      }],
+        name: '博学谷在线教育平台',
+        intro: '实现在线教育平台的数据分析及可视化。<a href="javascript:;" target="_blank" class="link"></a>',
+        tags: ['AngularJS','NodeJS']
+      }
+      ],
     },{
-      company: '北京艾德思奇科技有限公司',
-      from: '2013-06',
-      to: '2013-10',
+      // company: '',
+      // from: '',
+      // to: '',
       projects: [{
-        name: '艾德聚合平台重构',
-        intro: '艾德聚合平台是为移动APP开发者提供的一个信息管理平台，功能是发布应用，展示应用相关数据。',
-        tags: ['jQuery']
+        name: '豆瓣一刻',
+        intro: '运用 Angular 框架和跨域技术，从豆瓣数据库获取数据，模仿出豆瓣一刻。',
+        tags: ['Angular','php']
       }],
-    },{
-      company: '中国科学院化学工程研究所',
-      from: '2012-04',
-      to: '2013-05',
-      projects: [{
-        name: '中国循环经济技术平台子项目--企业黄页',
-        intro: '包括企业黄页项目和公司站点项目，均为门户性质的网站。<br />负责UI设计和前端开发工作。',
-        tags: ['jQuery','Phtoshop']
-      },{
-        name: '化合物搜索引擎ChemDB Portal改版',
-        intro: '学术性搜索引擎+门户性质信息网站，化学品电子商务类网站。<br />负责网站新版本UI设计和前端重构工作。',
-        tags: ['jQuery','Phtoshop']
-      }],
-    },{
-      company: '北京艾迪创想信息科技有限公司',
-      from: '2010-10',
-      to: '2012-11',
-      projects: [{
-        name: '开吃吧',
-        intro: '餐饮O2O，高校、白领外卖网。<br />自主创业项目，包括PC版、移动html5版，前端独立开发。',
-        tags: ['jQuery']
-      }]
     }];
     app.exp = new Vue({
         el: '#jExp',
